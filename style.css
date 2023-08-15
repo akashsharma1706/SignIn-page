@@ -1,0 +1,229 @@
+/* font */
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400&display=swap');
+
+/* universal selector */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* main body */
+body {
+font-family: 'Lato', sans-serif;
+}
+
+.outer-box{
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(to top left,#5bbfd8,#ff8181);
+}
+
+.inner-box{
+    width:380px;
+    margin: 0 auto;
+    position: relative;
+    top: 40%;
+    transform: translateY(-50%);
+    padding: 20px 25px;
+    background-color: #ffffff3a;
+    backdrop-filter: blur(5px);
+    border-radius: 7px;
+    box-shadow:2px 2px 5px ;
+    z-index: 2;
+}
+
+.signup-header h1{
+font-size: 2rem;
+color: #212121;
+}
+
+.signup-header p{
+ font-size: 0.9rem;
+ color: #555;
+}
+
+.signup-body{
+ margin: 20px 0;   
+}
+
+.signup-body p{
+margin: 10px 0;   
+}
+
+.signup-body p label{
+display: block;
+font-weight: bold;
+}
+
+.signup-body p input {
+width: 100%;
+margin-top: 4px;
+padding: 10px;
+border: 2px solid ;
+border-radius: 2px;
+font-size: 1rem;
+}
+
+/* submit button */
+.signup-body p input[type="submit"] {
+    background-color: #5fa7db;
+    border: none;
+    color: white;
+    cursor: pointer;
+
+}
+
+/* hover */
+.signup-body p input[type="submit"]:hover{
+background-color: #0164b6;
+cursor: pointer;
+}
+
+.signup-footer p a{
+color: #0164b6;
+}
+
+.circle1{
+    width: 100px;
+    height: 100px;
+    border-radius: 100px;
+    background: linear-gradient(to top right, #f7e7e7aa,rgb(208, 226, 233));
+    position: absolute;
+    opacity: 0.2;
+    top: 100px;
+    left: 100px;
+    animation-name: movement1;
+    animation-duration: 4s;
+    animation-iteration-count: 1000;
+    animation-delay: 0s;
+    animation-timing-function: linear;
+    animation-direction: alternate;
+
+}
+@keyframes movement1{
+    from{
+        top: 0px;
+        left: 100px;
+    }
+
+    to{
+        top: 674px;
+        left: 400px;
+    }
+}
+
+.circle2{
+    width: 100px;
+    height: 100px;
+    border-radius: 100px;
+    background: linear-gradient(to top right, #f7e7e7aa,rgb(208, 226, 233));
+    position: absolute;
+    opacity: 0.2;
+    bottom:200px ;
+    right: 100px;
+    animation-name: movement2;
+    animation-duration: 7s;
+    animation-iteration-count: 1000;
+    animation-delay: 0s;
+    animation-timing-function: linear;
+    animation-direction: alternate;
+   
+}
+@keyframes movement2{
+    from{
+        bottom:670px ;
+        right: 200px;
+    }
+
+    to{
+        bottom:0px ;
+        right: 600px;
+    }
+}
+
+.circle3{
+    width: 100px;
+    height: 100px;
+    border-radius: 100px;
+    background: linear-gradient(to top right, #f7e7e7aa,rgb(208, 226, 233));
+    position: absolute;
+    opacity: 0.2;
+    top:150px ;
+    right: 300px;
+    animation-name: movement3;
+    animation-duration: 6s;
+    animation-iteration-count: 1000;
+    animation-delay: 0s;
+    animation-timing-function: linear;
+    animation-direction: alternate;
+}
+@keyframes movement3{
+    from{
+        top:680px ;
+        right: 0px;
+    }
+
+    to{
+        top:0px ;
+        right: 400px;
+    }
+}
+
+.circle4{
+    width: 100px;
+    height: 100px;
+    border-radius: 100px;
+    background: linear-gradient(to top right, #f7e7e7aa,rgb(208, 226, 233));
+    position: absolute;
+    opacity: 0.2;
+    bottom:150px ;
+    left: 200px;
+    animation-name: movement4;
+    animation-duration: 5s;
+    animation-iteration-count: 1000;
+    animation-delay: 0s;
+    animation-timing-function: linear;
+    animation-direction: alternate-reverse;
+}
+@keyframes movement4{
+    from{
+        bottom:680px ;
+        left: 600px;
+    }
+
+    to{
+        
+        bottom:0px ;
+        left: 0px;
+    }
+}
+
+.circle5{
+    width: 100px;
+    height: 100px;
+    border-radius: 100px;
+    background: linear-gradient(to top right, #f7e7e7aa,rgb(208, 226, 233));
+    position: absolute;
+    opacity: 0.2;
+    top:0px ;
+    left: 500px;
+    animation-name: movement5;
+    animation-duration: 4s;
+    animation-iteration-count: 1000;
+    animation-delay: 0s;
+    animation-timing-function: linear;
+    animation-direction: alternate-reverse;
+}
+@keyframes movement5{
+    from{
+        top:0px ;
+        left: 500px;
+    }
+
+    to{
+        
+        top:680px ;
+        left:750px;
+    }
+}
